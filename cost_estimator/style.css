@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 34px;
+  padding: 32px;
   color: rgb(44, 44, 44);
 }
 
@@ -14,9 +14,9 @@ h1 {
 }
 
 .container {
+  background-color: white;
   width: 100%;
   max-width: 900px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +33,7 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(200, 175, 255);
+  margin: 0 0 32px 0;
   padding: 16px;
 }
 
@@ -44,8 +45,7 @@ h1 {
   color: rgb(83, 49, 156);
   cursor: pointer;
 }
-
-.tabs p.active {
+.tabs .active {
   color: rgb(83, 49, 156);
   position: relative;
 }
@@ -53,21 +53,21 @@ h1 {
 .line {
   height: 3px;
   width: 100%;
-  background-color: rgb(231, 231, 231);
   position: absolute;
   top: 98px;
+  background-color: rgb(231, 231, 231);
 }
 
 .tabs .active::before {
   content: "";
   width: 200%;
   height: 4px;
+  background-color: rgb(83, 49, 156);
   position: absolute;
   bottom: -32px;
   left: -50%;
   z-index: 2;
   border-radius: 10px;
-  background-color: rgb(83, 49, 156);
 }
 
 .toggle-wrapper {
@@ -103,4 +103,32 @@ h1 {
   color: rgb(83, 49, 156);
   padding: 4px 16px;
   border-radius: 20px;
+}
+
+.sessions-card {
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  padding: 32px;
+  width: 50%;
+  text-transform: uppercase;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+.sessions-card p {
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.sessions-card .number {
+  color: rgb(83, 49, 156);
+  font-size: 54px;
+  margin: 0;
+}
+
+.description {
+  line-height: 32px;
+  margin: 16px 0 32px 0;
 }
