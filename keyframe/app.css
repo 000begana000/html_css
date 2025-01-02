@@ -10,8 +10,8 @@
   animation-name: spin;
   animation-duration: 3s;
 }
-
-/* @keyframes colorchange {
+/* 
+@keyframes colorchange {
   from {
     background-color: pink;
   }
