@@ -40,6 +40,18 @@ body {
   height: 24px;
 }
 
+.navbar .hamburger {
+  display: none;
+}
+
+.navbar .bar {
+  background-color: black;
+  width: 32px;
+  height: 4px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
 .project-grid {
   display: grid;
   grid-template-areas:
@@ -150,7 +162,34 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+  }
+
+  .navbar .right {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .project-grid {
+    margin-top: 100px;
     grid-template-areas:
       "eth eth"
       "alphabet alphabet"
