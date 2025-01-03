@@ -9,6 +9,7 @@
   align-items: center;
   animation-name: move;
   animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes move {
@@ -19,8 +20,11 @@
   25% {
     transform: translateX(500px);
   }
+  75% {
+    transform: translateX(700px);
+  }
   100% {
-    transform: translateX(250px);
+    transform: translateX(0);
     background-color: magenta;
   }
 }
